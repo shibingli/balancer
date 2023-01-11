@@ -4,11 +4,11 @@ Goroutine-safe, High-performance general load balancing algorithm library.
 
 Smooth weighted load balancing algorithm: [NGINX](https://github.com/phusion/nginx/commit/27e94984486058d73157038f7950a0a36ecc6e35) and [LVS](http://kb.linuxvirtualserver.org/wiki/Weighted_Round-Robin_Scheduling), Doublejump provides a revamped Google's jump consistent hash.
 
-------
+---
 
-If you want a **faster** load balancer that supports **interface()**, please refer to another library: [fufuok/load-balancer](https://github.com/fufuok/load-balancer)
+If you want a **faster** load balancer that supports **interface()**, please refer to another library: [shibingli/load-balancer](https://github.com/shibingli/load-balancer)
 
-------
+---
 
 ## 🎯 Features
 
@@ -87,14 +87,14 @@ nodes := []string{"A", "B", "C"}
    ```go
    var lb balancer.Balancer
    lb = balancer.New(balancer.WeightedRoundRobin, wNodes, nil)
-   
+
    // or
    lb = balancer.New(balancer.WeightedRoundRobin, nil, nil)
    lb.Update(wNodes)
-   
+
    // or
    lb = balancer.NewWeightedRoundRobin(wNodes)
-   
+
    // or
    lb = balancer.NewWeightedRoundRobin()
    lb.Update(wNodes)
@@ -105,14 +105,14 @@ nodes := []string{"A", "B", "C"}
    ```go
    var lb balancer.Balancer
    lb = balancer.New(balancer.SmoothWeightedRoundRobin, wNodes, nil)
-   
+
    // or
    lb = balancer.New(balancer.SmoothWeightedRoundRobin, nil, nil)
    lb.Update(wNodes)
-   
+
    // or
    lb = balancer.NewSmoothWeightedRoundRobin(wNodes)
-   
+
    // or
    lb = balancer.NewSmoothWeightedRoundRobin()
    lb.Update(wNodes)
@@ -123,14 +123,14 @@ nodes := []string{"A", "B", "C"}
    ```go
    var lb balancer.Balancer
    lb = balancer.New(balancer.WeightedRand, wNodes, nil)
-   
+
    // or
    lb = balancer.New(balancer.WeightedRand, nil, nil)
    lb.Update(wNodes)
-   
+
    // or
    lb = balancer.NewWeightedRand(wNodes)
-   
+
    // or
    lb = balancer.NewWeightedRand()
    lb.Update(wNodes)
@@ -141,14 +141,14 @@ nodes := []string{"A", "B", "C"}
    ```go
    var lb balancer.Balancer
    lb = balancer.New(balancer.ConsistentHash, nil, nodes)
-   
+
    // or
    lb = balancer.New(balancer.ConsistentHash, nil, nil)
    lb.Update(nodes)
-   
+
    // or
    lb = balancer.NewConsistentHash(nodes)
-   
+
    // or
    lb = balancer.NewConsistentHash()
    lb.Update(nodes)
@@ -159,14 +159,14 @@ nodes := []string{"A", "B", "C"}
    ```go
    var lb balancer.Balancer
    lb = balancer.New(balancer.RoundRobin, nil, nodes)
-   
+
    // or
    lb = balancer.New(balancer.RoundRobin, nil, nil)
    lb.Update(nodes)
-   
+
    // or
    lb = balancer.NewRoundRobin(nodes)
-   
+
    // or
    lb = balancer.NewRoundRobin()
    lb.Update(nodes)
@@ -177,14 +177,14 @@ nodes := []string{"A", "B", "C"}
    ```go
    var lb balancer.Balancer
    lb = balancer.New(balancer.Random, nil, nodes)
-   
+
    // or
    lb = balancer.New(balancer.Random, nil, nil)
    lb.Update(nodes)
-   
+
    // or
    lb = balancer.NewRandom(nodes)
-   
+
    // or
    lb = balancer.NewRandom()
    lb.Update(nodes)
@@ -340,8 +340,4 @@ Third-party library licenses:
 - [doublejump]([doublejump/LICENSE at master · edwingeng/doublejump (github.com)](https://github.com/edwingeng/doublejump/blob/master/LICENSE))
 - [go-jump]([go-jump/LICENSE at master · dgryski/go-jump (github.com)](https://github.com/dgryski/go-jump/blob/master/LICENSE))
 
-
-
-
-
-*ff*
+_ff_
