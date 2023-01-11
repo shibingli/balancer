@@ -22,7 +22,7 @@ If you want a **faster** load balancer that supports **interface()**, please ref
 ## ⚙️ Installation
 
 ```go
-go get -u github.com/fufuok/balancer
+go get -u -v github.com/shibingli/balancer
 ```
 
 ## ⚡️ Quickstart
@@ -33,7 +33,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/fufuok/balancer"
+	"github.com/shibingli/balancer"
 )
 
 func main() {

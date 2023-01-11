@@ -4,7 +4,7 @@ package doublejump
 import (
 	"math/rand"
 
-	"github.com/fufuok/balancer/internal/go-jump"
+	"github.com/shibingli/balancer/internal/go-jump"
 )
 
 type looseHolder struct {

@@ -3,7 +3,7 @@ package balancer
 import (
 	"sync"
 
-	"github.com/fufuok/balancer/utils"
+	"github.com/shibingli/balancer/utils"
 )
 
 // Weighted Round-Robin Scheduling

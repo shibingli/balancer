@@ -4,7 +4,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/fufuok/balancer/utils"
+	"github.com/shibingli/balancer/utils"
 )
 
 // WeightedRand

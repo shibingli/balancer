@@ -3,8 +3,8 @@ package balancer
 import (
 	"sync"
 
-	"github.com/fufuok/balancer/internal/doublejump"
-	"github.com/fufuok/balancer/utils"
+	"github.com/shibingli/balancer/internal/doublejump"
+	"github.com/shibingli/balancer/utils"
 )
 
 // JumpConsistentHash
